@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { homTabs } from "../utils";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -32,6 +33,22 @@ export default function Home() {
         <a href="https://beian.miit.gov.cn/" target="_blank">
           湘ICP备2024067814号-1
         </a>
+        <div className="flex items-center">
+          <Image
+            className="pr-[2px]"
+            src="/beian_icon.png"
+            width={16}
+            height={18}
+            alt=""
+          />
+          <a
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=44011302004502"
+            rel="noreferrer"
+            target="_blank"
+          >
+            粤公网安备44011302004502号
+          </a>
+        </div>
       </div>
     </div>
   );
